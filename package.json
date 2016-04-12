@@ -1,0 +1,38 @@
+{
+  "name": "hapi-template",
+  "version": "1.0.0",
+  "description": "Project tempplate with HapiJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev0x10/hapi-template.git"
+  },
+  "keywords": [
+    "hapijs",
+    "template",
+    "nodejs"
+  ],
+  "author": "dev0x10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev0x10/hapi-template/issues"
+  },
+  "homepage": "https://github.com/dev0x10/hapi-template#readme",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "boom": "^3.1.2",
+    "config": "^1.20.1",
+    "h2o2": "^5.1.0",
+    "hapi": "^13.3.0",
+    "inert": "^3.2.0",
+    "joi": "^8.0.5",
+    "path": "^0.12.7",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "jscs-trailing-comma": "^0.4.4"
+  }
+}
