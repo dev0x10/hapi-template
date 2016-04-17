@@ -29,13 +29,5 @@ You can put your utility file here, eg: db connection, logger, etc.
 There is **.jscsrc** file included. It's based on [AirBnB style](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json) with small changes.
 
 
-## Sample Routes
-#### GET /users/1
-#### POST /users/
-```json
-{fname: '', lname:'', age:20}
-```
-
-
 
 
