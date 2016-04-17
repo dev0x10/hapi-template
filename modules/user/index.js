@@ -7,7 +7,7 @@ module.exports = (server) => {
   server.route([
     {
       method: ['GET'],
-      path: '/{id}',
+      path: '/user/{id}',
       config: {
         validate: userValidator.get,
         handler: userController.get
@@ -15,7 +15,7 @@ module.exports = (server) => {
     },
     {
       method: ['POST'],
-      path: '/',
+      path: '/user/',
       config: {
         validate: userValidator.create,
         handler: userController.create
