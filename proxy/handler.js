@@ -5,7 +5,7 @@ const proxyHandler = {};
 
 //INFO: here you can do something about the request uri
 //eg: adding params, edit params value, etc
-proxyHandler.mapUri = function(request, callback) {
+proxyHandler.mapUri = (request, callback) => {
 
   //ref: http://jsonplaceholder.typicode.com/
   let proxyAddres = 'http://jsonplaceholder.typicode.com';
@@ -21,7 +21,7 @@ proxyHandler.mapUri = function(request, callback) {
   //callback(new Boom.badRequest('request not allowed'));
 };
 
-proxyHandler.onResponse = function(err, res, request, reply) {
+proxyHandler.onResponse = (err, res, request, reply) => {
   if (err) {
     return reply({}).header('Content-Type', 'application/json');
   }

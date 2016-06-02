@@ -22,17 +22,17 @@
   },
   "homepage": "https://github.com/dev0x10/hapi-template#readme",
   "dependencies": {
-    "bluebird": "^3.3.4",
-    "boom": "^3.1.2",
-    "config": "^1.20.1",
+    "bluebird": "^3.4.0",
+    "boom": "^3.2.1",
+    "config": "^1.21.0",
     "h2o2": "^5.1.0",
-    "hapi": "^13.3.0",
-    "inert": "^3.2.0",
-    "joi": "^8.0.5",
+    "hapi": "^13.4.1",
+    "inert": "^4.0.0",
+    "joi": "^8.4.0",
     "path": "^0.12.7",
     "vision": "^4.1.0"
   },
   "devDependencies": {
-    "jscs-trailing-comma": "^0.4.4"
+    "jscs-trailing-comma": "*"
   }
 }

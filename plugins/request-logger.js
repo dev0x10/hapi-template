@@ -5,7 +5,7 @@ exports.register = (server, options, next) => {
 
   server.on('request-error', (request, err) => {
 
-    var logData = {
+    let logData = {
       reqId: request.id,
       ip: request.headers['x-forwarded-for'] || request.info.remoteAddress,
       userAgent: request.headers['user-agent'],
@@ -32,7 +32,7 @@ exports.register = (server, options, next) => {
   });
 
   server.on('response', (request) => {
-    var responseData = {};
+    let responseData = {};
 
     try {
       responseData = JSON.stringify(request.response.source);
