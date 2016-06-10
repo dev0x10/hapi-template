@@ -1,5 +1,3 @@
-'use strict';
-
 const templateController = require('./template-controller');
 const templateValidator = require('./template-validator');
 

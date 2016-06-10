@@ -1,5 +1,3 @@
-'use strict';
-
 const proxyHandler = require('./handler');
 
 module.exports = (server) => {

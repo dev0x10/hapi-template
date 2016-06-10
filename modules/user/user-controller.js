@@ -1,5 +1,3 @@
-'use strict';
-
 const Boom = require('boom');
 const userModel = require('./user-model');
 const userController = {};

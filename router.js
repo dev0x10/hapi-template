@@ -1,5 +1,3 @@
-'use strict';
-
 const userModule = require('./modules/user');
 const proxyServer = require('./proxy');
 const router = {

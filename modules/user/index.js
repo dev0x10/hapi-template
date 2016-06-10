@@ -1,5 +1,3 @@
-'use strict';
-
 const userController = require('./user-controller');
 const userValidator = require('./user-validator');
 

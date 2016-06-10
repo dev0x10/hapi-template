@@ -1,5 +1,3 @@
-'use strict';
-
 const Wreck = require('wreck');
 const proxyHandler = {};
 

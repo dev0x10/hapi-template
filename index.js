@@ -1,5 +1,3 @@
-'use strict';
-
 const Hapi = require('hapi');
 const Config = require('config');
 const plugins = require('./plugins');

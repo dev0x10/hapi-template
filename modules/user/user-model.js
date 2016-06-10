@@ -1,5 +1,3 @@
-'use strict';
-
 const Joi = require('joi');
 const commonUtil = require('../../utils/common-util');
 const userModel = {};

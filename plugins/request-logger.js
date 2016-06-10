@@ -1,7 +1,6 @@
 exports.register = (server, options, next) => {
 
   //INFO: replace the console log with your logger
-  'use strict';
 
   server.on('request-error', (request, err) => {
 

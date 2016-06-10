@@ -1,5 +1,3 @@
-'use strict';
-
 const Boom = require('boom');
 const templateModel = require('./template-model');
 const templateController = {};
