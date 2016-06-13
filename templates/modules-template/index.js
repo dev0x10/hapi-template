@@ -7,16 +7,16 @@ module.exports = (server) => {
       method: ['GET'],
       path: '/{id}',
       config: {
-        validate: templateController.get,
-        handler: templateValidator.get
+        validate: templateValidator.get,
+        handler: templateController.get
       }
     },
     {
       method: ['POST'],
       path: '/',
       config: {
-        validate: templateController.create,
-        handler: templateValidator.create
+        validate: templateValidator.create,
+        handler: templateController.create
       }
     }
   ]);
