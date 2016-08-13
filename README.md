@@ -26,7 +26,7 @@ Put your template files inside here. There is template modules inside it that ca
 You can put your utility file here, eg: db connection, logger, etc. 
 
 ## Code Style Checker:
-There is **.jscsrc** file included. It's based on [AirBnB style](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json) with small changes.
+There is **.eslintrc** file included.
 
 
 
