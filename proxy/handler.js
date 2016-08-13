@@ -24,7 +24,7 @@ proxyHandler.onResponse = (err, res, request, reply) => {
     return reply({}).header('Content-Type', 'application/json');
   }
 
-  Wreck.read(res, {json: true}, function(err, payload) {
+  Wreck.read(res, {json: true}, (err, payload) => {
     reply(payload);
   });
 };

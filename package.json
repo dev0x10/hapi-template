@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Project tempplate with HapiJS",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dev0x10/hapi-template.git"
@@ -22,18 +19,19 @@
   },
   "homepage": "https://github.com/dev0x10/hapi-template#readme",
   "dependencies": {
-    "bluebird": "^3.4.0",
-    "boom": "^3.2.1",
+    "bluebird": "^3.4.1",
+    "boom": "^3.2.2",
     "config": "^1.21.0",
+    "eslint": "^3.3.0",
     "h2o2": "^5.1.0",
-    "hapi": "^13.4.1",
-    "inert": "^4.0.0",
-    "joi": "^8.4.1",
+    "hapi": "^14.1.0",
+    "inert": "^4.0.1",
+    "joi": "^9.0.4",
     "path": "^0.12.7",
     "vision": "^4.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
-    "eslint": "^2.12.0"
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.3.0"
   }
 }

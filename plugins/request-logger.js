@@ -11,7 +11,7 @@ exports.register = (server, options, next) => {
       reqPath: request.path,
       error: err
     };
-    console.log('onRequestError', logData);
+    console.error('onRequestError', logData);
 
   });
 
@@ -43,8 +43,7 @@ exports.register = (server, options, next) => {
         resData: responseData
       };
       console.log('onResponse', logData);
-    }
-    catch (e) {
+    } catch (e) {
       console.error('Server on response cannot parse output', e);
     }
 
