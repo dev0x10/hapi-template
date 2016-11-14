@@ -9,9 +9,9 @@ Server config file inside here. This config folder file loaded using popular npm
 ### /modules
 Put your project module here. Each module consists of 4 files:
 - index.js --> module router ([HapiJS route](http://hapijs.com/tutorials/routing))
-- *-controller.js --> module controller
-- *-model.js --> module model 
-- *-validator.js --> router validator ([HapiJS route validation](http://hapijs.com/tutorials/validation))
+- controller.js
+- model.js 
+- validator.js --> router validator ([HapiJS route validation](http://hapijs.com/tutorials/validation))
 
 ### /plugins
 You can put your own [HapiJS plugin](http://hapijs.com/tutorials/plugins) or 3rd party plugins and require it in **index.js**
