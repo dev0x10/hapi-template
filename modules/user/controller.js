@@ -1,5 +1,5 @@
 const Boom = require('boom');
-const userModel = require('./user-model');
+const userModel = require('./model');
 const userController = {};
 
 userController.get = (request, reply) => reply(userModel.get(request.params.id));

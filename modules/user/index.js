@@ -1,5 +1,5 @@
-const userController = require('./user-controller');
-const userValidator = require('./user-validator');
+const userController = require('./controller');
+const userValidator = require('./validator');
 
 module.exports = (server) => {
   server.route([

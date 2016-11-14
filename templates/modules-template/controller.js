@@ -1,5 +1,5 @@
 const Boom = require('boom');
-const templateModel = require('./template-model');
+const templateModel = require('./model');
 const templateController = {};
 
 templateController.get = (request, reply) => 'Hello World';

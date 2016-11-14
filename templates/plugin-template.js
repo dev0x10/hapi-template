@@ -7,6 +7,6 @@ exports.register = (server, options, next) => {
 };
 
 exports.register.attributes = {
-  name: 'plugin-template',
+  name: 'plugin-name',
   version: '0.1'
 };

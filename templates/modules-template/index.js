@@ -1,5 +1,5 @@
-const templateController = require('./template-controller');
-const templateValidator = require('./template-validator');
+const controller = require('./controller');
+const validator = require('./validator');
 
 module.exports = (server) => {
   server.route([
@@ -7,16 +7,16 @@ module.exports = (server) => {
       method: ['GET'],
       path: '/{id}',
       config: {
-        validate: templateValidator.get,
-        handler: templateController.get
+        validate: validator.get,
+        handler: controller.get
       }
     },
     {
       method: ['POST'],
       path: '/',
       config: {
-        validate: templateValidator.create,
-        handler: templateController.create
+        validate: validator.create,
+        handler: controller.create
       }
     }
   ]);
