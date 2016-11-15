@@ -1,8 +1,8 @@
-const userModule = require('./modules/user');
+const modules = require('./modules');
 const proxyServer = require('./proxy');
 const router = {
   set: (server) => {
-    userModule(server);
+    modules.user.router(server);
     proxyServer(server);
 
     //index router

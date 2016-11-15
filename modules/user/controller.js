@@ -8,7 +8,7 @@ userController.create = (request, reply) => {
   if (userModel.create(request.payload)) {
     reply(201);
   } else {
-    reply(new Boom.badData());
+    reply(Boom.badData());
   }
 };
 
