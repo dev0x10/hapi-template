@@ -1,35 +1,34 @@
-const Hapi = require('hapi');
+'use strict';
+
+const Hoek = require('hoek');
+const Server = require('./server');
 const Config = require('config');
-const plugins = require('./plugins');
-const server = new Hapi.Server();
-const serverConfig = Config.get('server');
-const router = require('./router');
+const internals = {};
 
-server.connection({
-  host: serverConfig.host,
-  port: serverConfig.port,
-  routes: {
-    cors: {
-      origin: serverConfig.allowOrigins
-    }
-  }
-});
+internals.manifest = {
+    connections: [{
+        port: Config.server.port,
+        host: Config.server.host,
+        labels: ['hapi'],
+        routes: {
+            cors: { origin: Config.server.allowOrigins }
+        }
+    }],
+    registrations: [
+        { plugin: 'vision' },
+        { plugin: 'h2o2' },
+        { plugin: 'inert' },
+        { plugin: './plugins/user' }
+    ]
+};
 
-server.register(plugins, (err) => {
+internals.composeOptions = {
+    relativeTo: __dirname
+};
 
-  if (err) {
-    console.error(err);
-    process.exit(1);
-  }
+Server.init(internals.manifest, internals.composeOptions, (err, server) => {
 
-  router.set(server);
-  server.start(() => {
-    console.info('Server running at: ' + server.info.uri);
-  });
-
-});
-
-process.on('uncaughtException', (err) => {
-  console.error(err);
-  process.exit(1);
+    Hoek.assert(!err, err);
+    const hapi = server.select('hapi');
+    server.log('Web server started at: ' + hapi.info.uri);
 });

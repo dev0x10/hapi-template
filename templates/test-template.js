@@ -7,9 +7,9 @@ const test = lab.test;
 const expect = Code.expect;
 
 suite('math', () => {
-  test('returns true when 1 + 1 equals 2', (done) => {
+    test('returns true when 1 + 1 equals 2', (done) => {
 
-    expect(1 + 1).to.equal(2);
-    done();
-  });
+        expect(1 + 1).to.equal(2);
+        done();
+    });
 });
