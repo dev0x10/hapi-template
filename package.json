@@ -23,24 +23,24 @@
   "homepage": "https://github.com/dev0x10/hapi-template#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "boom": "^5.1.0",
-    "config": "^1.26.1",
-    "eslint-config-hapi": "^10.0.0",
+    "boom": "^5.2.0",
+    "config": "^1.26.2",
+    "eslint-config-hapi": "^10.1.0",
     "eslint-plugin-hapi": "^4.0.0",
-    "glue": "^4.1.0",
-    "h2o2": "^5.4.0",
-    "hapi": "^16.4.3",
-    "hoek": "^4.1.1",
-    "inert": "^4.2.0",
+    "glue": "^4.2.0",
+    "h2o2": "^6.0.0",
+    "hapi": "^16.5.2",
+    "hoek": "^4.2.0",
+    "inert": "^4.2.1",
     "joi": "^10.6.0",
     "path": "^0.12.7",
     "vision": "^4.1.1",
-    "wreck": "^12.2.2"
+    "wreck": "^12.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "code": "^4.1.0",
-    "eslint": "^4.1.1",
-    "lab": "^14.1.0"
+    "eslint": "^4.6.1",
+    "lab": "^14.2.2"
   }
 }
