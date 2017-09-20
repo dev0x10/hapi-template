@@ -28,14 +28,14 @@
     "eslint-config-hapi": "^10.1.0",
     "eslint-plugin-hapi": "^4.0.0",
     "glue": "^4.2.0",
-    "h2o2": "^6.0.0",
-    "hapi": "^16.5.2",
+    "h2o2": "^6.0.1",
+    "hapi": "^16.6.0",
     "hoek": "^4.2.0",
     "inert": "^4.2.1",
     "joi": "^10.6.0",
     "path": "^0.12.7",
     "vision": "^4.1.1",
-    "wreck": "^12.4.0"
+    "wreck": "^12.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
