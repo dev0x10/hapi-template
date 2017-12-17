@@ -15,10 +15,19 @@ internals.manifest = {
         }
     }],
     registrations: [
-        { plugin: 'vision' },
+
+        // loads plugin without options
         { plugin: 'h2o2' },
-        { plugin: 'inert' },
-        { plugin: './plugins/user' }
+
+        // loads plugin with options
+        {
+            plugin: {
+                register: './plugins/user',
+                options: {
+                    defaultUser: { id: '0', name: 'default' }
+                }
+            }
+        }
     ]
 };
 
@@ -30,5 +39,5 @@ Server.init(internals.manifest, internals.composeOptions, (err, server) => {
 
     Hoek.assert(!err, err);
     const hapi = server.select('hapi');
-    server.log('Web server started at: ' + hapi.info.uri);
+    console.log('Web server started at: ' + hapi.info.uri);
 });

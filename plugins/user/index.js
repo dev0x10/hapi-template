@@ -3,7 +3,9 @@
 const router = require('./router');
 
 exports.register = (server, options, next) => {
-    router(server);
+    // passed options when loading plugin available here
+    // it can be passed to router as well
+    router(server, options);
     return next();
 };
 

@@ -2,16 +2,16 @@
 
 const userModel = {};
 
-const members = [
-  { id: 1, fName: 'Joker', lName: 'John Doe', age: 33 }
+const users = [
+    { id: 1, fName: 'Joker', lName: 'John Doe', age: 33 }
 ];
 
-userModel.get = (id) => members.filter((m) => m.id === id).pop() || {};
+userModel.get = (id) => users.filter((m) => m.id === id).pop() || {};
 
 userModel.create = (user) => {
-    user.id = members.length + 1;
-    members.push(user);
-    return user;
+    user.id = users.length + 1;
+    users.push(user);
+    return user.id;
 };
 
 module.exports = userModel;

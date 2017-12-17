@@ -7,12 +7,8 @@ const userController = {};
 userController.get = (request, reply) => reply(userModel.get(request.params.id));
 
 userController.create = (request, reply) => {
-    if (userModel.create(request.payload)) {
-        reply(201);
-    }
-    else {
-        reply(Boom.badData());
-    }
+    const userId = userModel.create(request.payload);
+    reply(userId);
 };
 
 module.exports = userController;

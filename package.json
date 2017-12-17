@@ -1,7 +1,7 @@
 {
   "name": "hapi-template",
   "version": "1.0.0",
-  "description": "Project tempplate with HapiJS",
+  "description": "HapiJS project template",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
     "nodejs"
   ],
   "scripts": {
+    "start": "node index.js",
     "test": "lab test -v"
   },
   "author": "dev0x10",
@@ -25,22 +26,20 @@
     "bluebird": "^3.5.1",
     "boom": "^5.2.0",
     "config": "^1.28.1",
-    "eslint-config-hapi": "^10.1.0",
-    "eslint-plugin-hapi": "^4.1.0",
     "glue": "^4.2.1",
     "h2o2": "^6.1.0",
     "hapi": "^16.6.2",
     "hoek": "^4.2.0",
-    "inert": "^4.2.1",
     "joi": "^10.6.0",
     "path": "^0.12.7",
-    "vision": "^4.1.1",
     "wreck": "^12.5.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "code": "^4.1.0",
     "eslint": "^4.13.1",
+    "eslint-config-hapi": "^10.1.0",
+    "eslint-plugin-hapi": "^4.1.0",
     "lab": "^14.3.2"
   }
 }
