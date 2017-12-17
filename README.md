@@ -1,3 +1,7 @@
+#### No more update, new version for new HapiJS available at
+[https://github.com/yauri-io/hapi-template.git](https://github.com/yauri-io/hapi-template.git)
+
+
 # Hapi JS Project Template
 This is minimalistic Node.js project template using [HapiJS](http://hapijs.com).
 
@@ -14,7 +18,7 @@ In this template, plugin consists of 6 files:
 - model.js 
 - router.js --> plugin router ([HapiJS route](http://hapijs.com/tutorials/routing))
 - validator.js --> router validator ([HapiJS route validation](http://hapijs.com/tutorials/validation))
-- pre-handler.js --> method for processing request before it reaches the controller [HapiJS pre-handler](https://hapijs.com/api/16.6.2#route-prerequisites)
+- pre-handler.js --> method for processing request before it reaches the controller ([HapiJS pre-handler](https://hapijs.com/api/16.6.2#route-prerequisites))
 
 ### /proxy
 Simple example of creating proxy on HapiJS and [H2o2](https://github.com/hapijs/h2o2)
