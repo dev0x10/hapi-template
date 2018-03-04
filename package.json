@@ -25,11 +25,11 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "boom": "^5.2.0",
-    "config": "^1.28.1",
+    "config": "^1.30.0",
     "glue": "^4.2.1",
     "h2o2": "^6.1.0",
-    "hapi": "^16.6.2",
-    "hoek": "^4.2.0",
+    "hapi": "^16.6.3",
+    "hoek": "^4.2.1",
     "joi": "^10.6.0",
     "path": "^0.12.7",
     "wreck": "^12.5.1"
@@ -37,7 +37,7 @@
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "code": "^4.1.0",
-    "eslint": "^4.13.1",
+    "eslint": "^4.18.2",
     "eslint-config-hapi": "^10.1.0",
     "eslint-plugin-hapi": "^4.1.0",
     "lab": "^14.3.2"
